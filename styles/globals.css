@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.Results-cotainer {
+  background: #f4f5f7;
+  padding: 64px 165px;
+  font-family: "Inter", sans-serif;
+}

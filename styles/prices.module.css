@@ -1,0 +1,275 @@
+.price_section {
+  background: #f4f5f7;
+  padding: 60px 135px 133px 135px;
+  font-family: "Inter", sans-serif;
+}
+
+.heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.heading h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+  color: #231d4f;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.heading p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #848199;
+  margin: 0;
+}
+
+/*Tabbing Css Start*/
+
+.tab_section .nav_tabs {
+  margin-bottom: 60px;
+  border: none;
+  background: #fff;
+  width: fit-content;
+  border-radius: 22px;
+  margin: 0 auto 110px;
+}
+
+.tab_section .nav_tabs .nav_item .nav_link.active {
+  background-color: #e80008;
+  border-color: none;
+  border-radius: 22px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.833333px;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 7px rgba(82, 67, 194, 0.230196);
+  text-transform: uppercase;
+}
+
+.tab_section .nav_tabs .nav_item .nav_link {
+  border: none;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+  padding: 0;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #848199;
+  text-align: center;
+  letter-spacing: 0.833333px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.tab_section .nav_tabs .nav_item {
+  height: 44px;
+  width: 111px;
+}
+
+.tab_content {
+  background: #ffffff;
+  border-radius: 26px;
+  border: none;
+}
+
+.tab_content .tab_pane .price_section {
+  width: 25%;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 0;
+  padding: 40px;
+}
+
+.tab_content .tab_pane .price_section:last-child {
+  margin-right: 0px;
+}
+
+.tab_pane .price_section .amount {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.tab_pane .price_section .amount h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #231d4f;
+  margin: 0 10px 0px 0px;
+}
+
+.tab_pane .price_section .amount span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  color: #848199;
+}
+
+.tab_pane .price_section .details h3 {
+  font-style: normal;
+  font-size: 28px;
+  line-height: 38px;
+  color: #231d4f;
+  margin: 0 0px 10px 0px;
+  text-align: left;
+}
+
+.tab_pane .price_section .details p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #848199;
+  margin: 0 0px 20px 0px;
+  text-align: left;
+}
+
+.tab_pane .price_section .list_section {
+  margin-bottom: 24px;
+}
+
+.tab_pane .price_section .list_section .item_list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tab_pane .price_section .list_section .item_list:last-child {
+  margin-bottom: 0px;
+}
+
+.tab_pane .price_section .list_section .item_list .check_mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: rgba(240, 74, 74, 0.103693);
+  margin-right: 10px;
+}
+
+.tab_pane .price_section.active_card {
+  background-color: #e80008;
+  color: #fff;
+  box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+  position: relative;
+  top: -50px;
+  padding-top: 50px;
+}
+
+.tab_pane .price_section.active_card .popular_text {
+  padding: 7px 16px;
+  color: #f496d1;
+  background: #b33131;
+  border-radius: 13.5px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.833333px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.tab_pane .price_section.active_card h1 {
+  color: #fff;
+}
+
+.tab_pane .price_section.active_card span {
+  color: #fff !important;
+}
+
+.tab_pane .price_section.active_card h3 {
+  color: #fff;
+}
+
+.tab_pane .price_section.active_card p {
+  color: #fff;
+}
+
+.tab_pane .price_section.active_card p {
+  color: #fff;
+}
+
+.tab_pane .price_section.active_card .btn_plan {
+  color: #e80008;
+  background-color: #fff;
+}
+
+.tab_pane .choose_btn .btn_plan {
+  width: 207px;
+  height: 45px;
+  border: none;
+  background: rgba(240, 74, 74, 0.103693);
+  border-radius: 24px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #e80008;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab_pane .choose_btn .btn_plan:focus {
+  outline: none;
+}
+
+/*Tabbing Css End*/
+
+/*Responsive Css Start*/
+
+@media only screen and (max-width: 1200px) {
+  .price_section {
+    padding: 60px 40px 133px 40px;
+  }
+  .tab_content .tab_pane .price_section {
+    padding: 20px;
+  }
+  .tab_pane .price_section.active_card .btn_plan {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .price_container {
+    flex-wrap: wrap;
+  }
+  .tab_content .tab_pane .price_section {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .tab_pane .price_section .btn_plan {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .price_section {
+    padding: 60px 25px 133px 25px;
+  }
+  .tab_content .tab_pane .price_section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .tab_pane .price_section.active_card {
+    top: 0;
+  }
+}

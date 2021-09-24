@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -117,5 +117,231 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+} */
+
+.home_container {
+  font-family: "Inter", sans-serif;
+}
+
+.home_container .banner_section {
+  display: flex;
+  padding: 150px 120px 0px 165px;
+}
+
+.button{
+  color:red;
+}
+
+.banner_section .banner_content {
+  width: 50%;
+  text-align: left;
+  margin-right: 55px;
+}
+
+.banner_section .banner_content h1 {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.banner_section .banner_content p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+.banner_section .banner_content .btn-red {
+  width: 137px;
+  height: 48px;
+  padding: 12px 32px;
+  background: #e80008;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner_section .banner_content .btn-red a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banner_section .banner_content .btn-red:focus {
+  outline: none;
+}
+
+.banner_section .banner_image_section {
+  width: 50%;
+}
+
+.banner_section .banner_image_section .circle_shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.banner_section .banner_image_section .circle_shape img {
+  height: 100%;
+  width: 100%;
+}
+
+.banner_section .banner_image_section .banner_img {
+  position: relative;
+}
+
+.banner_section .banner_image_section .banner_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner_section .banner_image_section .banner_img .orange_circle {
+  position: absolute;
+  left: 0;
+}
+
+.achievement_section .achievement_text {
+  padding: 170px 165px 0px 165px;
+  text-align: left;
+}
+
+.achievement_section .achievement_text h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.achievement_section .achievement_text p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #222222;
+  margin: 0;
+}
+
+.achievement_section .achievement_box {
+  padding: 32px 165px 65px 165px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.achievement_section .achievement_box::after {
+  content: "";
+  height: 218px;
+  width: 100%;
+  position: absolute;
+  background: #0b0d17;
+  bottom: 0;
+  left: 0;
+}
+
+.achievement_section .achievement_box .box {
+  position: relative;
+  height: 255px;
+  width: 255px;
+  z-index: 9;
+}
+
+.achievement_section .achievement_box .box img {
+  height: 100%;
+  width: 100%;
+}
+
+.achievement_section .achievement_box .count {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.achievement_section .achievement_box .box label {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.achievement_section .achievement_box .box span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/*Responsive Css Start*/
+
+@media only screen and (max-width: 1200px) {
+  .home_container .banner_section {
+    padding: 120px 40px 0px 40px;
+  }
+  .achievement_section .achievement_text {
+    padding: 170px 40px 0px 40px;
+  }
+  .achievement_section .achievement_box {
+    padding: 32px 40px 65px 40px;
+    flex-wrap: wrap;
+  }
+  .achievement_section .achievement_box .box {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner_section .banner_image_section .circle_shape {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home_container .banner_section {
+    flex-direction: column-reverse;
+  }
+  .banner_section .banner_content {
+    width: 100%;
+    margin-right: 0;
+  }
+  .banner_section .banner_image_section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home_container .banner_section {
+    padding: 60px 25px 0px 25px;
+  }
+  .achievement_section .achievement_text {
+    padding: 140px 25px 0px 25px;
+  }
+  .achievement_section .achievement_box {
+    padding: 32px 25px 65px 25px;
+  }
+  .banner_section .banner_content h1 {
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .achievement_section .achievement_box {
+    justify-content: center;
+  }
+  .achievement_section .achievement_box .box {
+    height: 255px;
+    width: 255px;
   }
 }
