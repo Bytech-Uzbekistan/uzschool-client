@@ -219,11 +219,11 @@ span {
   text-align: left;
 }
 
-.testimonial_container p {
+.testimonial_container span {
   font-style: normal;
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 64px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
   color: #18191f;
   margin: 8px 0px;
   text-align: left;

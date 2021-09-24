@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

@@ -231,7 +231,7 @@
 .achievement_section .achievement_box {
   padding: 32px 165px 65px 165px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
 }
 

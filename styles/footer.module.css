@@ -8,6 +8,9 @@
 
 .footer_container .footer_logo {
   margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer_container .footer_menu {

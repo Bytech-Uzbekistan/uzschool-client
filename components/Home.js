@@ -63,13 +63,13 @@ const Home = () => {
                   <span>Dedicated Members</span>
                 </div>
               </div>
-              <div className={styles.box}>
+              {/* <div className={styles.box}>
                 <Image src={PolygonShape} />
                 <div className={styles.count}>
                   <label>25+</label>
                   <span>Awards Won</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
