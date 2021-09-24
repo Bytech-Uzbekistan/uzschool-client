@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "../styles/header.module.css";
 import Image from "next/image";
 import headerLogo from "../public/header_logo.png";
@@ -9,26 +9,31 @@ import youtubeIcon from "../public/youtube-icon.png";
 import Link from "next/link";
 
 const Header = () => {
-  // var navList = document.getElementById( "nav_lists" );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenuMobile = () => {
     console.log("clicked");
     setIsMenuOpen(!isMenuOpen);
-  };
+  }
+
+  const gp = () => {
+    console.log("GP")
+  }
+
   return (
-    // <header>
-    <div className={`${styles.header_section},${styles.container}`}>
+    <header>
+    <div className={`${styles.header_section} ${styles.container}`}>
       <div className={styles.inner_header}>
         <div className={styles.navbar}>
-          <div className={styles.icon_bar} onClick={() => toggleMenuMobile()}>
+          <div className={styles.icon_bar} onClick={toggleMenuMobile}>
             <i></i>
             <i></i>
             <i></i>
           </div>
-          <ul id="nav_lists" className={styles.isMenuOpen ? "_Menus_show" : ""}>
+          <ul id="nav_lists" className={isMenuOpen ? `` : `${styles._Menus_show}`}>
+          {/* <ul id="nav_lists" className={styles.isMenuOpen ? `${styles._Menus_show}` : ``}> */}
             <li className={styles.close}>
-              <span onClick={() => toggleMenuMobile()}>×</span>
+              <span onClick={toggleMenuMobile}>×</span>
             </li>
             <li>
               <Link href="/">
@@ -53,14 +58,14 @@ const Header = () => {
           </ul>
         </div>
         <div className={styles.logo}>
-          <a className={styles.a} href="#">
+          <a className={styles.a}>
             <Link href="/">
               <Image src={headerLogo} />
             </Link>
           </a>
         </div>
         <div className={styles.social_icons}>
-          <div className={styles.social_inner} d-flex>
+          <div className={`${styles.social_inner} d-flex`}>
             <div className={styles.icon}>
               <Link href="/">
                 <Image src={instaIcon} />
@@ -86,16 +91,18 @@ const Header = () => {
       </div>
       <div className={styles.mobile_menu}>
         <div className={styles.navbar}>
-          <div className={styles.icon_bar} onClick={() => toggleMenuMobile()}>
+          <div className={styles.icon_bar} onClick={toggleMenuMobile}>
             <i></i>
             <i></i>
             <i></i>
           </div>
         </div>
         <div className={styles.mobile_sidebar}>
-          <ul id="nav_lists" className={styles.isMenuOpen ? "" : "_Menus_show"}>
+        {/* className={`banner ${active ? "active" : ""}`} */}
+          <ul id="nav_lists" className={isMenuOpen ? `` : `${styles._Menus_show}`}>
+          {/* <ul id="nav_lists" className={styles.isMenuOpen ? `` : `${styles._Menus_show}`}> */}
             <li className={styles.close_btn}>
-              <span onClick={() => toggleMenuMobile()}>×</span>
+              <span onClick={toggleMenuMobile}>×</span>
             </li>
             <li>
               <Link href="/">Home</Link>
@@ -104,16 +111,16 @@ const Header = () => {
               <Link href="/about">About course</Link>
             </li>
             <li>
-              <Link href="/results">Results</Link>
+              <Link href="/result">Results</Link>
             </li>
             <li>
-              <Link href="/price">Prices</Link>
+              <Link href="/prices">Prices</Link>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    // </header>
+     </header>
   );
 };
 

@@ -155,7 +155,7 @@
   margin-bottom: 32px;
 }
 
-.banner_section .banner_content .btn-red {
+.banner_section .banner_content .btn_red {
   width: 137px;
   height: 48px;
   padding: 12px 32px;
@@ -169,12 +169,12 @@
   cursor: pointer;
 }
 
-.banner_section .banner_content .btn-red a {
+.banner_section .banner_content .btn_red a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.banner_section .banner_content .btn-red:focus {
+.banner_section .banner_content .btn_red:focus {
   outline: none;
 }
 

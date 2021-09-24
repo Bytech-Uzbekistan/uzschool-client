@@ -105,3 +105,82 @@ const Slider = () => {
   );
 };
 export default Slider;
+
+// import React from "react";
+// import { UncontrolledCarousel, Row, Col } from "reactstrap";
+
+// const items = [
+//   {
+//     src: {profileImg},
+//     altText: "Slide 1",
+//     caption: "",
+//     header: "",
+//     key: "1",
+//   },
+//   {
+//     src: {profileImg},
+//     altText: "Slide 2",
+//     caption: "",
+//     header: "",
+//     key: "2",
+//   },
+//   {
+//     src: {profileImg},
+//     altText: "Slide 3",
+//     caption: "",
+//     header: "",
+//     key: "3",
+//   },
+// ];
+
+// const Slider = () => (
+//   <Row>
+//     <Col md="8" className="mx-auto">
+//       <UncontrolledCarousel items={items} />
+//     </Col>
+//   </Row>
+// );
+
+// export default Slider;
+
+// import "../carousel.css";
+// import Link from "next/link";
+// import Router from "next/router";
+// import Image from "next/image";
+
+// const Slider = () => (
+//   <div className="slider">
+//     <Link href="/">
+//       {/* <a>1</a> */}
+//       <Image src={profileImg}/>
+//     </Link>
+//     <Link href="/">
+//       {/* <a>2</a> */}
+//       <Image src={profileImg}/>
+//     </Link>
+//     <Link href="/">
+//       {/* <a>3</a> */}
+//       <Image src={profileImg}/>
+//     </Link>
+//     {/* <Link href="#slide-4" scroll={false}>
+//       <a>4</a>
+//     </Link>
+//     <Link href="#slide-5" scroll={false}>
+//       <a>5</a>
+//     </Link> */}
+
+//     <div className="slides">
+//       <div name="slide-1" id="slide-1">
+//         1
+//       </div>
+//       <div name="slide-2" id="slide-2">
+//         2
+//       </div>
+//       <div id="slide-3">3</div>
+//       <div id="slide-4">4</div>
+//       <div id="slide-5">5</div>
+//     </div>
+//   </div>
+// );
+
+// export default Slider

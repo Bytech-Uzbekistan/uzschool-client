@@ -17,7 +17,7 @@ const Price = () => {
         </div>
         <div className={styles.tab_section}>
         {/* nav */}
-          <ul className={`${styles.nav_tabs} ${styles.md_tabs}`} id="myTabMD" role="tablist">
+          <ul className={`nav ${styles.nav_tabs} ${styles.md_tabs}`} id="myTabMD" role="tablist">
             <li className={styles.nav_item}>
               <a
                 className={`${styles.nav_link} ${styles.active}`}
@@ -46,16 +46,16 @@ const Price = () => {
             </li>
           </ul>
           {/* card */}
-          <div className={`${styles.tab_content}`} id="myTabContentMD">
+          <div className={`card ${styles.tab_content}`} id="myTabContentMD">
           {/* fade show */}
             <div
-              className={`${styles.tab_pane} ${styles.active}` }
+              className={` fade show ${styles.tab_pane} ${styles.active}` }
               id="montly_md"
               role="tabpanel"
               aria_labelledby="montly_tab_md"
             >
             {/* d_flex */}
-              <div className={`${styles.price_container}`}>
+              <div className={` d-flex ${styles.price_container}`}>
                 <div className={styles.price_section}>
                   <div className={styles.amount}>
                     <h1>$20</h1>
@@ -246,7 +246,7 @@ const Price = () => {
               aria_labelledby="yearly_tab_md"
             >
             {/* d_flex */}
-              <div className={styles.price_container}>
+              <div className={`d-flex ${styles.price_container}`}>
                 <div className={styles.price_section}>
                   <div className={styles.amount}>
                     <h1>$20</h1>

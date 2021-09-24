@@ -21,7 +21,7 @@ const Results = () => {
           <h1>Our Clients Speak</h1>
           <span>We have been working with clients around the world</span>
         </div>
-        <Slider />
+        {/* <Slider /> */}
       </div>
       <div className={styles.testimonial_container}>
         <div className={styles.Quote_shape}>

@@ -114,7 +114,7 @@
   cursor: pointer;
 }
 
-.container .navbar .icon-bar {
+.container .navbar .icon_bar {
   padding: 18px 8px;
   width: 40px;
   height: 55px;
@@ -129,7 +129,7 @@
   cursor: pointer;
 }
 
-.container .navbar .icon-bar i {
+.container .navbar .icon_bar i {
   background-color: #000;
   height: 2px;
 }
@@ -180,12 +180,12 @@
   .container .navbar ul .close {
     display: block;
   }
-  .container .navbar .icon-bar {
+  .container .navbar .icon_bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .container .navbar ._Menus-show {
+  .container .navbar ._Menus_show {
     left: 0;
   }
 }
@@ -195,7 +195,7 @@
   align-items: center;
 }
 
-.social-icons .icon {
+.social_icons .icon {
   height: 32px;
   width: 32px;
   border-radius: 100%;
