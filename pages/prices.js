@@ -7,14 +7,11 @@ import whiteCheckmark from "../public/white-checkmark.png";
 import subtract from "../public/subtract.png";
 import chevron_left from "../public/chevron-left.png";
 import Link from "next/link";
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React, { useState } from "react";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const Price = (props) => {
-  const {
-    buttonLabel,
-    className
-  } = props;
+  const { buttonLabel, className } = props;
 
   const [modal, setModal] = useState(false);
 
@@ -38,7 +35,9 @@ const Price = (props) => {
               aria_labelledby="montly_tab_md"
             >
               {/* d_flex */}
-              <div className={` d-flex justify-content-center ${styles.price_container}`}>
+              <div
+                className={` d-flex justify-content-center ${styles.price_container}`}
+              >
                 <div className={styles.price_section}>
                   <div className={styles.amount}>
                     <h1>$50</h1>
@@ -84,7 +83,9 @@ const Price = (props) => {
                     <button className={styles.btn_plan}>Choose plan</button>
                   </div>
                 </div>
-                <div className={`${styles.price_section} ${styles.active_card}`}>
+                <div
+                  className={`${styles.price_section} ${styles.active_card}`}
+                >
                   <div className={styles.popular_text}>MOST POPULAR</div>
                   <div className={styles.amount}>
                     <h1>$100</h1>
@@ -128,7 +129,9 @@ const Price = (props) => {
                   </div>
                   <div className={styles.choose_btn}>
                     {/* <button className={styles.btn_plan}>Choose plan</button> */}
-                    <Button className={styles.btn_plan} onClick={toggle}>Choose plan</Button>
+                    <Button className={styles.btn_plan} onClick={toggle}>
+                      Choose plan
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -332,36 +335,47 @@ const Price = (props) => {
           {/* <ModalHeader toggle={toggle}>Modal title</ModalHeader> */}
           <ModalBody className={styles.register_body}>
             <h2>Register to the course</h2>
-            <p>after completing the for you will be contacted as soon as possible!</p>
+            <p>
+              after completing the for you will be contacted as soon as
+              possible!
+            </p>
             <label className={styles.read_text}>Read CAREFULLY</label>
             <div className={styles.form_group}>
-              <input id="name" type="text" autocomplete="name" />
-              <span className={styles.subtract_icon}><Image src={subtract} /></span>
+              <input id="name" type="text" autoComplete="name" />
+              <span className={styles.subtract_icon}>
+                <Image src={subtract} />
+              </span>
             </div>
             <div className={styles.form_group}>
-              <input id="name" type="text" autocomplete="name" />
-              <span className={styles.subtract_icon}><Image src={subtract} /></span>
+              <input id="name" type="text" autoComplete="name" />
+              <span className={styles.subtract_icon}>
+                <Image src={subtract} />
+              </span>
             </div>
             <div className={styles.form_group}>
               <select>
                 <option>Premium</option>
                 <option>Premium</option>
               </select>
-              <span className={styles.subtract_icon}><Image src={chevron_left} /></span>
+              <span className={styles.subtract_icon}>
+                <Image src={chevron_left} />
+              </span>
             </div>
             <div className={styles.form_group}>
-              <label className={styles.checkbox}>I agre with the <span>terms</span> and <span>conditions</span>
+              <label className={styles.checkbox}>
+                I agre with the <span>terms</span> and <span>conditions</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark}></span>
               </label>
             </div>
             <div className={styles.form_group}>
-              <Button className={styles.btn_complete} onClick={toggle}>Complete Registration</Button>
+              <Button className={styles.btn_complete} onClick={toggle}>
+                Complete Registration
+              </Button>
             </div>
           </ModalBody>
         </Modal>
         {/* Modal Section End */}
-
       </div>
       <Footer />
     </div>
